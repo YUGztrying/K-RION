@@ -6,6 +6,13 @@ Proposition De Service.pdf
 # Duplicate root images (already in assets/)
 /logo.png
 /image.png
+/Afnor-certification.png
+/afnor-developpement.png
+/soget.png
+/simplerezo-logo.png
+
+# Claude Code
+.claude/
 
 # System
 .DS_Store
