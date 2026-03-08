@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | K-RION Consulting</title>
+  <meta name="description" content="Contactez K-RION Consulting pour vos besoins en audit, conseil et formation cybersécurité et QSE. Prenez rendez-vous en ligne.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            accent: { DEFAULT: '#b14ce6', 500: '#b14ce6', 400: '#c472ec', 600: '#9030c0', 900: '#46155e' },
+            brand: { 50: '#f0fdf4', 100: '#dcfce7', 200: '#bbf7d0', 300: '#86efac', 400: '#4ade80', 500: '#22c55e', 600: '#16a34a', 700: '#15803d', 800: '#166534', 900: '#14532d' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .time-slot-selected {
+      border-color: #b14ce6 !important;
+      color: white !important;
+      background-color: rgba(177, 76, 230, 0.1);
+    }
+  </style>
+</head>
+<body class="antialiased font-sans bg-slate-950 text-slate-400 selection:bg-accent-500/30 selection:text-accent-100 relative overflow-x-hidden">
+
+  <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+    <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-brand-900/10 blur-[100px]"></div>
+    <div class="absolute top-[20%] right-[-5%] w-[30%] h-[30%] rounded-full bg-accent-900/10 blur-[120px]"></div>
+    <div class="absolute bottom-[-10%] left-[20%] w-[30%] h-[30%] rounded-full bg-blue-900/5 blur-[100px]"></div>
+  </div>
+
+  <div id="nav-placeholder"></div>
+
+  <!-- CONTACT SECTION -->
+  <section class="pt-32 pb-16 md:pt-40 md:pb-20 max-w-7xl mx-auto px-6 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-16">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/50 border border-slate-800 backdrop-blur-sm text-xs font-medium text-slate-300 mb-6 shadow-sm">
+          <span class="iconify text-brand-500" data-icon="lucide:mail" data-width="14" data-stroke-width="1.5"></span>
+          Contact
+        </div>
+        <h1 class="text-3xl md:text-5xl font-semibold tracking-tight mb-6 text-white leading-tight">
+          Contactez-nous
+        </h1>
+        <p class="mb-8 leading-relaxed text-slate-400 text-lg">
+          Échangez avec un expert senior sur vos enjeux de conformité, d'audit ou de formation. Réponse sous 24h ouvrées.
+        </p>
+
+        <div class="space-y-6">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded bg-slate-900 flex items-center justify-center text-white border border-slate-800 hover:border-accent-500/50 hover:text-accent-400 transition-colors">
+              <span class="iconify" data-icon="lucide:mail" data-width="18" data-stroke-width="1.5"></span>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500 uppercase font-semibold tracking-wide">Email</p>
+              <p class="text-white font-medium">contact@k-rion.com</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded bg-slate-900 flex items-center justify-center text-white border border-slate-800 hover:border-accent-500/50 hover:text-accent-400 transition-colors">
+              <span class="iconify" data-icon="lucide:map-pin" data-width="18" data-stroke-width="1.5"></span>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500 uppercase font-semibold tracking-wide">Siège</p>
+              <p class="text-white font-medium">France</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded bg-slate-900 flex items-center justify-center text-white border border-slate-800 hover:border-accent-500/50 hover:text-accent-400 transition-colors">
+              <span class="iconify" data-icon="lucide:clock" data-width="18" data-stroke-width="1.5"></span>
+            </div>
+            <div>
+              <p class="text-xs text-slate-500 uppercase font-semibold tracking-wide">Disponibilité</p>
+              <p class="text-white font-medium">Lun - Ven, 9h - 18h</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="bg-slate-900/50 backdrop-blur-sm p-8 rounded-xl border border-slate-800 shadow-sm relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-accent-500/5 rounded-full blur-2xl"></div>
+        <div class="space-y-4 relative z-10">
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium text-slate-300 mb-1">Nom</label>
+              <input type="text" class="w-full px-4 py-2 bg-slate-950 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-accent-500 focus:ring-1 focus:ring-accent-500 transition-all placeholder-slate-600" placeholder="Votre nom">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-300 mb-1">Société</label>
+              <input type="text" class="w-full px-4 py-2 bg-slate-950 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-accent-500 focus:ring-1 focus:ring-accent-500 transition-all placeholder-slate-600" placeholder="Entreprise">
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-1">Email professionnel</label>
+            <input type="email" class="w-full px-4 py-2 bg-slate-950 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-accent-500 focus:ring-1 focus:ring-accent-500 transition-all placeholder-slate-600" placeholder="email@societe.com">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-1">Service concerné</label>
+            <div class="relative">
+              <select class="w-full px-4 py-2 bg-slate-950 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-accent-500 focus:ring-1 focus:ring-accent-500 transition-all appearance-none">
+                <option>Conseil ISO 27001</option>
+                <option>Audit</option>
+                <option>QSE</option>
+                <option>Formation</option>
+                <option>Autre</option>
+              </select>
+              <span class="iconify absolute right-3 top-2.5 text-slate-400 pointer-events-none" data-icon="lucide:chevron-down" data-width="16" data-stroke-width="1.5"></span>
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-1">Message</label>
+            <textarea rows="4" class="w-full px-4 py-2 bg-slate-950 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-accent-500 focus:ring-1 focus:ring-accent-500 transition-all placeholder-slate-600" placeholder="Décrivez votre projet..."></textarea>
+          </div>
+          <button type="button" class="w-full py-3 px-4 bg-brand-600 hover:bg-brand-500 text-white font-medium text-sm rounded transition-all shadow-md hover:shadow-brand-500/20">
+            Envoyer la demande
+          </button>
+          <p class="text-xs text-slate-500 text-center mt-2">
+            Vos données sont traitées dans le strict respect de la confidentialité.
+          </p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- BOOKING MODULE -->
+  <section id="rdv" class="py-24 max-w-7xl mx-auto px-6 relative z-10 border-t border-slate-800">
+    <div class="max-w-2xl">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="p-2 bg-accent-900/20 border border-accent-500/20 rounded text-accent-500 shadow-[0_0_15px_-3px_rgba(177,76,230,0.3)]">
+          <span class="iconify" data-icon="lucide:calendar" data-width="24" data-stroke-width="1.5"></span>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight text-white">Prendre un rendez-vous</h2>
+      </div>
+      <p class="mb-8 text-slate-400 leading-relaxed">
+        Sélectionnez un créneau pour un échange avec un expert K-RION. Nous vous recontacterons pour confirmer le rendez-vous.
+      </p>
+
+      <form class="bg-slate-900/50 backdrop-blur-sm p-8 rounded-xl border border-slate-800 space-y-6">
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-1">Service souhaité</label>
+          <div class="relative">
+            <select class="w-full px-4 py-2 bg-slate-950 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-accent-500 focus:ring-1 focus:ring-accent-500 transition-all appearance-none">
+              <option>Audit ISO 27001</option>
+              <option>Conseil Cybersécurité</option>
+              <option>Conseil QSE</option>
+              <option>Formation ISO 27001</option>
+              <option>Formation QSE</option>
+              <option>Autre</option>
+            </select>
+            <span class="iconify absolute right-3 top-2.5 text-slate-400 pointer-events-none" data-icon="lucide:chevron-down" data-width="16" data-stroke-width="1.5"></span>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-1">Date souhaitée</label>
+          <input type="date" class="w-full px-4 py-2 bg-slate-950 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-accent-500 focus:ring-1 focus:ring-accent-500 transition-all">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-3">Créneau horaire préféré</label>
+          <div class="grid grid-cols-3 sm:grid-cols-6 gap-3" id="time-slots">
+            <button type="button" class="time-slot px-4 py-2 bg-slate-950 border border-slate-700 rounded text-sm text-slate-300 hover:border-accent-500 hover:text-white transition-all">09:00</button>
+            <button type="button" class="time-slot px-4 py-2 bg-slate-950 border border-slate-700 rounded text-sm text-slate-300 hover:border-accent-500 hover:text-white transition-all">10:00</button>
+            <button type="button" class="time-slot px-4 py-2 bg-slate-950 border border-slate-700 rounded text-sm text-slate-300 hover:border-accent-500 hover:text-white transition-all">11:00</button>
+            <button type="button" class="time-slot px-4 py-2 bg-slate-950 border border-slate-700 rounded text-sm text-slate-300 hover:border-accent-500 hover:text-white transition-all">14:00</button>
+            <button type="button" class="time-slot px-4 py-2 bg-slate-950 border border-slate-700 rounded text-sm text-slate-300 hover:border-accent-500 hover:text-white transition-all">15:00</button>
+            <button type="button" class="time-slot px-4 py-2 bg-slate-950 border border-slate-700 rounded text-sm text-slate-300 hover:border-accent-500 hover:text-white transition-all">16:00</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-1">Nom complet</label>
+            <input type="text" class="w-full px-4 py-2 bg-slate-950 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-accent-500 focus:ring-1 focus:ring-accent-500 transition-all placeholder-slate-600" placeholder="Votre nom">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-1">Société</label>
+            <input type="text" class="w-full px-4 py-2 bg-slate-950 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-accent-500 focus:ring-1 focus:ring-accent-500 transition-all placeholder-slate-600" placeholder="Entreprise">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-1">Email professionnel</label>
+          <input type="email" class="w-full px-4 py-2 bg-slate-950 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-accent-500 focus:ring-1 focus:ring-accent-500 transition-all placeholder-slate-600" placeholder="email@societe.com">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-1">Téléphone</label>
+          <input type="tel" class="w-full px-4 py-2 bg-slate-950 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-accent-500 focus:ring-1 focus:ring-accent-500 transition-all placeholder-slate-600" placeholder="+33 6 00 00 00 00">
+        </div>
+
+        <button type="button" class="w-full py-3 px-4 bg-accent-600 hover:bg-accent-500 text-white font-medium text-sm rounded transition-all shadow-md hover:shadow-accent-500/20">
+          Confirmer le rendez-vous
+        </button>
+        <p class="text-xs text-slate-500 text-center">
+          Nous vous recontacterons pour confirmer la disponibilité du créneau choisi.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="shared.js"></script>
+  <script>
+    // Time slot selection
+    document.querySelectorAll('.time-slot').forEach(function(slot) {
+      slot.addEventListener('click', function() {
+        document.querySelectorAll('.time-slot').forEach(function(s) {
+          s.classList.remove('time-slot-selected');
+        });
+        this.classList.add('time-slot-selected');
+      });
+    });
+  </script>
+</body>
+</html>

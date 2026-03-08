@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos | K-RION Consulting</title>
+  <meta name="description" content="Découvrez K-RION Consulting : cabinet de conseil en cybersécurité et QSE. Notre mission, nos valeurs et notre expertise.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            accent: { DEFAULT: '#b14ce6', 500: '#b14ce6', 400: '#c472ec', 600: '#9030c0', 900: '#46155e' },
+            brand: { 50: '#f0fdf4', 100: '#dcfce7', 200: '#bbf7d0', 300: '#86efac', 400: '#4ade80', 500: '#22c55e', 600: '#16a34a', 700: '#15803d', 800: '#166534', 900: '#14532d' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased font-sans bg-slate-950 text-slate-400 selection:bg-accent-500/30 selection:text-accent-100 relative overflow-x-hidden">
+
+  <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+    <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-brand-900/10 blur-[100px]"></div>
+    <div class="absolute top-[20%] right-[-5%] w-[30%] h-[30%] rounded-full bg-accent-900/10 blur-[120px]"></div>
+    <div class="absolute bottom-[-10%] left-[20%] w-[30%] h-[30%] rounded-full bg-blue-900/5 blur-[100px]"></div>
+  </div>
+
+  <div id="nav-placeholder"></div>
+
+  <!-- HERO -->
+  <section class="pt-32 pb-16 md:pt-40 md:pb-20 max-w-7xl mx-auto px-6 relative z-10">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/50 border border-slate-800 backdrop-blur-sm text-xs font-medium text-slate-300 mb-6 shadow-sm">
+        <span class="iconify text-accent-400" data-icon="lucide:info" data-width="14" data-stroke-width="1.5"></span>
+        À propos de K-RION
+      </div>
+      <h1 class="text-3xl md:text-5xl font-semibold tracking-tight mb-6 text-white leading-tight">
+        La sécurité au service de la
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-accent-400">performance</span>
+      </h1>
+      <p class="text-lg text-slate-400 leading-relaxed">
+        K-RION Consulting est un cabinet de conseil, audit et formation spécialisé en cybersécurité et QSE. Nous accompagnons les organisations dans la structuration de leur gouvernance sécurité et de leurs démarches qualité.
+      </p>
+    </div>
+  </section>
+
+  <!-- VISION -->
+  <section class="py-20 bg-slate-900/80 border-y border-slate-800 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-accent-900/10 to-transparent pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-xs font-semibold text-accent-400 uppercase tracking-widest mb-4 block">Notre Vision</span>
+          <p class="text-xl md:text-2xl font-medium leading-relaxed text-slate-200 mb-6">
+            "Nous croyons fermement que la sécurité ne doit pas entraver le business. Notre mission est de rendre la gouvernance cybersécurité lisible, accessible et créatrice de valeur."
+          </p>
+          <p class="text-slate-400 leading-relaxed">
+            Nous transformons la conformité en avantage stratégique. Notre approche pragmatique permet aux organisations de toutes tailles de structurer leur sécurité sans compromettre leur agilité.
+          </p>
+        </div>
+        <div class="relative">
+          <div class="absolute -inset-4 bg-gradient-to-tr from-brand-500/10 via-accent-500/10 to-blue-500/10 rounded-2xl blur-xl opacity-60"></div>
+          <img src="assets/logo.png" alt="K-RION Logo" class="relative w-48 h-48 mx-auto opacity-80">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section class="py-24 max-w-7xl mx-auto px-6 relative z-10">
+    <h2 class="text-sm font-semibold text-brand-500 uppercase tracking-widest mb-2">Nos Expertises</h2>
+    <p class="text-2xl md:text-3xl font-semibold tracking-tight mb-12 text-white">Ce qui nous distingue.</p>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-slate-900/50 rounded-xl p-8 border border-slate-800 hover:border-brand-500/30 transition-colors group">
+        <div class="w-12 h-12 rounded-lg bg-brand-900/20 flex items-center justify-center text-brand-500 mb-6 group-hover:scale-110 transition-transform">
+          <span class="iconify" data-icon="lucide:target" data-width="24" data-stroke-width="1.5"></span>
+        </div>
+        <h3 class="text-lg font-semibold text-white mb-3">Approche pragmatique</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Nous construisons des démarches proportionnées à vos risques, votre maturité et vos enjeux business. Pas de surdimensionnement, pas de théorie inutile.
+        </p>
+      </div>
+
+      <div class="bg-slate-900/50 rounded-xl p-8 border border-slate-800 hover:border-accent-500/30 transition-colors group">
+        <div class="w-12 h-12 rounded-lg bg-accent-900/20 flex items-center justify-center text-accent-500 mb-6 group-hover:scale-110 transition-transform">
+          <span class="iconify" data-icon="lucide:handshake" data-width="24" data-stroke-width="1.5"></span>
+        </div>
+        <h3 class="text-lg font-semibold text-white mb-3">Proximité client</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Un interlocuteur senior dédié, une écoute active et un accompagnement personnalisé. Nous nous adaptons à votre contexte, pas l'inverse.
+        </p>
+      </div>
+
+      <div class="bg-slate-900/50 rounded-xl p-8 border border-slate-800 hover:border-blue-500/30 transition-colors group">
+        <div class="w-12 h-12 rounded-lg bg-blue-900/20 flex items-center justify-center text-blue-500 mb-6 group-hover:scale-110 transition-transform">
+          <span class="iconify" data-icon="lucide:award" data-width="24" data-stroke-width="1.5"></span>
+        </div>
+        <h3 class="text-lg font-semibold text-white mb-3">Excellence normative</h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Maîtrise approfondie des référentiels ISO 27001, ISO 9001, ISO 14001 et des standards de cybersécurité. Une expertise reconnue par nos partenaires.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="py-20 bg-slate-900/50 border-y border-slate-800 relative z-10">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-sm font-semibold text-accent-500 uppercase tracking-widest mb-2">Nos Valeurs</h2>
+      <p class="text-2xl md:text-3xl font-semibold tracking-tight mb-12 text-white">Les principes qui guident notre action.</p>
+
+      <ul class="grid md:grid-cols-2 gap-6">
+        <li class="flex items-start gap-4 group">
+          <span class="iconify text-brand-500 mt-1 shrink-0 group-hover:text-accent-500 transition-colors" data-icon="lucide:check-circle-2" data-width="22" data-stroke-width="1.5"></span>
+          <div>
+            <h3 class="text-white font-semibold mb-1">Indépendance</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">Nos recommandations sont objectives et guidées uniquement par l'intérêt de nos clients.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-4 group">
+          <span class="iconify text-brand-500 mt-1 shrink-0 group-hover:text-accent-500 transition-colors" data-icon="lucide:check-circle-2" data-width="22" data-stroke-width="1.5"></span>
+          <div>
+            <h3 class="text-white font-semibold mb-1">Transparence</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">Communication claire sur nos méthodes, nos constats et nos préconisations.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-4 group">
+          <span class="iconify text-brand-500 mt-1 shrink-0 group-hover:text-accent-500 transition-colors" data-icon="lucide:check-circle-2" data-width="22" data-stroke-width="1.5"></span>
+          <div>
+            <h3 class="text-white font-semibold mb-1">Pragmatisme</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">Des solutions concrètes et applicables, adaptées à la réalité opérationnelle de chaque organisation.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-4 group">
+          <span class="iconify text-brand-500 mt-1 shrink-0 group-hover:text-accent-500 transition-colors" data-icon="lucide:check-circle-2" data-width="22" data-stroke-width="1.5"></span>
+          <div>
+            <h3 class="text-white font-semibold mb-1">Engagement</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">Nous nous investissons pleinement dans chaque mission pour garantir des résultats durables.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 max-w-7xl mx-auto px-6 relative z-10">
+    <div class="text-center">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-4 text-white">Prêt à travailler avec nous ?</h2>
+      <p class="text-slate-400 mb-8 max-w-xl mx-auto">
+        Échangez avec notre équipe pour discuter de vos enjeux et définir un accompagnement sur mesure.
+      </p>
+      <a href="contact.html" class="group inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white rounded-md transition-all shadow-[0_0_20px_-5px_rgba(22,163,74,0.3)] hover:shadow-[0_0_25px_-5px_rgba(177,76,230,0.4)] bg-gradient-to-r from-brand-600 to-brand-700 hover:from-accent-600 hover:to-accent-700 relative overflow-hidden">
+        <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+        <span class="relative flex items-center">
+          Nous contacter
+          <span class="iconify ml-2 group-hover:translate-x-1 transition-transform" data-icon="lucide:arrow-right" data-width="16" data-stroke-width="1.5"></span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="shared.js"></script>
+</body>
+</html>

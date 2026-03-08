@@ -1,0 +1,13 @@
+# Original template & dev files
+HTML.html
+INSTRUCTIONS_SITE.md
+Proposition De Service.pdf
+
+# Duplicate root images (already in assets/)
+/logo.png
+/image.png
+
+# System
+.DS_Store
+Thumbs.db
+node_modules/
