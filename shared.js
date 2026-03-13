@@ -4,8 +4,8 @@
 
   const navLinks = [
     { href: 'index.html', label: 'Accueil' },
-    { href: 'audit.html', label: 'Audit' },
-    { href: 'conseil.html', label: 'Conseil' },
+    { href: 'cybersecurite.html', label: 'Cybersécurité' },
+    { href: 'qse.html', label: 'QSE' },
     { href: 'formation.html', label: 'Formation' },
     { href: 'a-propos.html', label: '\u00C0 propos' },
   ];
