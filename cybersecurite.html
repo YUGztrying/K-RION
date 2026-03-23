@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersécurité | K-RION Consulting</title>
+  <meta name="description" content="Conseil, audit ISO 27001 et analyse OSINT. Structurez votre cybersécurité avec K-RION Consulting : accompagnement, certification et renseignement en sources ouvertes.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            accent: { DEFAULT: '#b14ce6', 500: '#b14ce6', 400: '#c472ec', 600: '#9030c0', 900: '#46155e' },
+            brand: { 50: '#f0fdf4', 100: '#dcfce7', 200: '#bbf7d0', 300: '#86efac', 400: '#4ade80', 500: '#22c55e', 600: '#16a34a', 700: '#15803d', 800: '#166534', 900: '#14532d' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes float {
+      0% { transform: translateY(0px); opacity: 0.5; }
+      50% { transform: translateY(-10px); opacity: 0.8; }
+      100% { transform: translateY(0px); opacity: 0.5; }
+    }
+    .animate-float { animation: float 6s ease-in-out infinite; }
+  </style>
+</head>
+<body class="antialiased font-sans bg-slate-950 text-slate-400 selection:bg-accent-500/30 selection:text-accent-100 relative overflow-x-hidden">
+
+  <!-- Background Glows -->
+  <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+    <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-brand-900/10 blur-[100px]"></div>
+    <div class="absolute top-[20%] right-[-5%] w-[30%] h-[30%] rounded-full bg-accent-900/10 blur-[120px]"></div>
+    <div class="absolute bottom-[-10%] left-[20%] w-[30%] h-[30%] rounded-full bg-blue-900/5 blur-[100px]"></div>
+  </div>
+
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <section class="pt-32 pb-16 md:pt-40 md:pb-20 max-w-7xl mx-auto px-6 relative z-10">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/50 border border-slate-800 backdrop-blur-sm text-xs font-medium text-slate-300 mb-6 shadow-sm">
+      <span class="iconify text-brand-500" data-icon="lucide:shield" data-width="14" data-stroke-width="1.5"></span>
+      Cybersécurité &amp; ISO 27001
+    </div>
+    <h1 class="text-3xl md:text-5xl font-semibold tracking-tight mb-6 text-white leading-tight">
+      Audit, Conseil &amp;
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-accent-400">Cybersécurité</span>
+    </h1>
+    <p class="text-lg max-w-2xl text-slate-400 leading-relaxed">
+      Structurez votre posture de cybersécurité, préparez votre certification ISO 27001 et anticipez les menaces grâce à l'analyse OSINT. Un accompagnement complet, du conseil à l'audit.
+    </p>
+  </section>
+
+  <!-- CONSEIL CYBERSÉCURITÉ -->
+  <section class="py-16 max-w-7xl mx-auto px-6 relative z-10">
+    <div class="mb-8">
+      <h2 class="text-sm font-semibold text-brand-500 uppercase tracking-widest mb-2">Conseil &amp; Accompagnement</h2>
+      <p class="text-2xl font-semibold text-white tracking-tight">Structurez votre gouvernance cyber</p>
+    </div>
+    <div class="relative">
+      <div class="absolute -left-6 top-0 bottom-0 w-px bg-gradient-to-b from-brand-500/50 via-slate-800 to-transparent hidden lg:block"></div>
+      <div class="bg-slate-900/50 rounded-xl p-8 border border-slate-800">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="p-2 bg-brand-900/20 border border-brand-500/20 rounded text-brand-500 shadow-[0_0_15px_-3px_rgba(22,163,74,0.3)]">
+            <span class="iconify" data-icon="lucide:shield" data-width="24" data-stroke-width="1.5"></span>
+          </div>
+          <h3 class="text-xl font-semibold text-white">Conseil en cybersécurité</h3>
+        </div>
+        <div class="prose prose-invert prose-p:text-slate-400 prose-p:leading-7 max-w-none">
+          <p>
+            Nous vous accompagnons dans la structuration et l'amélioration de votre posture de cybersécurité, quel que soit votre niveau de maturité.
+          </p>
+          <p>
+            Notre approche s'adapte à vos besoins : nous pouvons intervenir dans le cadre d'un <strong class="text-white">accompagnement opérationnel complet</strong>, en pilotant la démarche et en prenant en charge la rédaction du socle documentaire nécessaire, ou agir comme <strong class="text-white">conseil stratégique</strong>, afin d'orienter et de soutenir vos équipes internes dans la mise en œuvre de vos projets.
+          </p>
+          <p>
+            Que votre objectif soit de structurer votre gouvernance de sécurité, mettre en place un SMSI, préparer une certification ISO 27001 ou renforcer votre gestion des risques, nous vous apportons l'expertise et la méthodologie nécessaires pour sécuriser votre démarche et atteindre vos objectifs.
+          </p>
+          <p class="font-medium text-white border-l-2 border-brand-500 pl-4 bg-gradient-to-r from-brand-500/10 to-transparent py-2 rounded-r">
+            Gouvernance, SMSI, certification ISO 27001, gestion des risques — nous pilotons ou conseillons selon vos besoins.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUDIT CYBERSÉCURITÉ -->
+  <section class="py-16 border-t border-slate-800/50 max-w-7xl mx-auto px-6 relative z-10">
+    <div class="mb-12">
+      <h2 class="text-sm font-semibold text-blue-500 uppercase tracking-widest mb-2">Nos Audits Cybersécurité</h2>
+      <p class="text-2xl font-semibold text-white tracking-tight">Une vision claire de votre maturité</p>
+    </div>
+    <div class="space-y-20">
+
+      <!-- Diagnostic Initial -->
+      <div class="grid lg:grid-cols-[1fr_2fr] gap-12 items-start">
+        <div class="lg:sticky lg:top-24">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="p-2.5 bg-brand-900/20 border border-brand-500/20 rounded-lg text-brand-500 shadow-[0_0_15px_-3px_rgba(22,163,74,0.3)]">
+              <span class="iconify" data-icon="lucide:stethoscope" data-width="24" data-stroke-width="1.5"></span>
+            </div>
+            <span class="text-xs font-semibold text-brand-500 uppercase tracking-widest">Étape 01</span>
+          </div>
+          <h3 class="text-2xl font-semibold text-white tracking-tight">Diagnostic initial</h3>
+        </div>
+        <div class="relative">
+          <div class="absolute -left-6 top-0 bottom-0 w-px bg-gradient-to-b from-brand-500/50 via-slate-800 to-transparent hidden lg:block"></div>
+          <div class="bg-slate-900/50 rounded-xl p-8 border border-slate-800 hover:border-brand-500/20 transition-colors">
+            <div class="prose prose-invert prose-p:text-slate-400 prose-p:leading-7 max-w-none">
+              <p>
+                Réalisez un diagnostic initial de votre organisation afin d'identifier votre niveau de conformité, vos forces et vos axes d'amélioration. Cette première analyse permet de poser les bases d'une démarche structurée et d'établir une feuille de route adaptée à vos enjeux.
+              </p>
+            </div>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <span class="px-3 py-1 bg-brand-900/20 border border-brand-500/20 rounded-full text-xs font-medium text-brand-400">Conformité</span>
+              <span class="px-3 py-1 bg-brand-900/20 border border-brand-500/20 rounded-full text-xs font-medium text-brand-400">Feuille de route</span>
+              <span class="px-3 py-1 bg-brand-900/20 border border-brand-500/20 rounded-full text-xs font-medium text-brand-400">Axes d'amélioration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Audit d'évaluation -->
+      <div class="grid lg:grid-cols-[1fr_2fr] gap-12 items-start">
+        <div class="lg:sticky lg:top-24">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="p-2.5 bg-blue-900/20 border border-blue-500/20 rounded-lg text-blue-500 shadow-[0_0_15px_-3px_rgba(59,130,246,0.3)]">
+              <span class="iconify" data-icon="lucide:bar-chart-3" data-width="24" data-stroke-width="1.5"></span>
+            </div>
+            <span class="text-xs font-semibold text-blue-500 uppercase tracking-widest">Étape 02</span>
+          </div>
+          <h3 class="text-2xl font-semibold text-white tracking-tight">Audit d'évaluation</h3>
+        </div>
+        <div class="relative">
+          <div class="absolute -left-6 top-0 bottom-0 w-px bg-gradient-to-b from-blue-500/50 via-slate-800 to-transparent hidden lg:block"></div>
+          <div class="bg-slate-900/50 rounded-xl p-8 border border-slate-800 hover:border-blue-500/20 transition-colors">
+            <div class="prose prose-invert prose-p:text-slate-400 prose-p:leading-7 max-w-none">
+              <p>
+                Évaluez le niveau de maturité de votre organisation en matière de cybersécurité ou dans le cadre de l'intégration d'une nouvelle norme (ISO 27001, référentiels sectoriels, etc.). Cet audit permet de mesurer l'écart entre vos pratiques actuelles et les exigences du référentiel visé.
+              </p>
+            </div>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <span class="px-3 py-1 bg-blue-900/20 border border-blue-500/20 rounded-full text-xs font-medium text-blue-400">Maturité</span>
+              <span class="px-3 py-1 bg-blue-900/20 border border-blue-500/20 rounded-full text-xs font-medium text-blue-400">Analyse d'écart</span>
+              <span class="px-3 py-1 bg-blue-900/20 border border-blue-500/20 rounded-full text-xs font-medium text-blue-400">ISO 27001</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Audit interne avant certification -->
+      <div class="grid lg:grid-cols-[1fr_2fr] gap-12 items-start">
+        <div class="lg:sticky lg:top-24">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="p-2.5 bg-accent-900/20 border border-accent-500/20 rounded-lg text-accent-500 shadow-[0_0_15px_-3px_rgba(177,76,230,0.3)]">
+              <span class="iconify" data-icon="lucide:clipboard-check" data-width="24" data-stroke-width="1.5"></span>
+            </div>
+            <span class="text-xs font-semibold text-accent-500 uppercase tracking-widest">Étape 03</span>
+          </div>
+          <h3 class="text-2xl font-semibold text-white tracking-tight">Audit interne avant certification</h3>
+        </div>
+        <div class="relative">
+          <div class="absolute -left-6 top-0 bottom-0 w-px bg-gradient-to-b from-accent-500/50 via-slate-800 to-transparent hidden lg:block"></div>
+          <div class="bg-slate-900/50 rounded-xl p-8 border border-slate-800 hover:border-accent-500/20 transition-colors">
+            <div class="prose prose-invert prose-p:text-slate-400 prose-p:leading-7 max-w-none">
+              <p>
+                Préparez sereinement votre certification grâce à un audit interne complet. Cette étape permet de vérifier la conformité de votre système de management, d'identifier les non-conformités éventuelles et de sécuriser votre passage devant l'organisme certificateur.
+              </p>
+            </div>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <span class="px-3 py-1 bg-accent-900/20 border border-accent-500/20 rounded-full text-xs font-medium text-accent-400">Certification</span>
+              <span class="px-3 py-1 bg-accent-900/20 border border-accent-500/20 rounded-full text-xs font-medium text-accent-400">Non-conformités</span>
+              <span class="px-3 py-1 bg-accent-900/20 border border-accent-500/20 rounded-full text-xs font-medium text-accent-400">SMSI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ANALYSE OSINT -->
+  <section id="osint" class="py-16 border-t border-slate-800/50 max-w-7xl mx-auto px-6 relative z-10">
+    <div class="mb-12">
+      <h2 class="text-sm font-semibold text-accent-500 uppercase tracking-widest mb-2">Renseignement en Sources Ouvertes</h2>
+      <p class="text-2xl font-semibold text-white tracking-tight">Analyse OSINT</p>
+    </div>
+
+    <div class="bg-slate-900/50 rounded-xl p-8 border border-accent-500/10 mb-10">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="p-2.5 bg-accent-900/20 border border-accent-500/20 rounded-lg text-accent-500 shadow-[0_0_15px_-3px_rgba(177,76,230,0.3)]">
+          <span class="iconify" data-icon="lucide:search" data-width="24" data-stroke-width="1.5"></span>
+        </div>
+        <h3 class="text-xl font-semibold text-white">Anticipez les menaces, protégez votre image</h3>
+      </div>
+      <p class="text-slate-400 leading-7 max-w-3xl mb-4">
+        Contenu en cours de rédaction — cette section sera complétée prochainement avec le détail de nos prestations OSINT.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-slate-900/30 p-6 rounded-lg border border-slate-800 hover:border-accent-500/20 transition-colors group">
+        <div class="p-2.5 bg-accent-900/20 border border-accent-500/20 rounded-lg text-accent-500 w-fit mb-4">
+          <span class="iconify" data-icon="lucide:globe" data-width="22" data-stroke-width="1.5"></span>
+        </div>
+        <h4 class="text-white font-semibold mb-2">Cartographie de l'empreinte numérique</h4>
+        <p class="text-sm text-slate-500">[Contenu à fournir par le client]</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-slate-900/30 p-6 rounded-lg border border-slate-800 hover:border-accent-500/20 transition-colors group">
+        <div class="p-2.5 bg-accent-900/20 border border-accent-500/20 rounded-lg text-accent-500 w-fit mb-4">
+          <span class="iconify" data-icon="lucide:database" data-width="22" data-stroke-width="1.5"></span>
+        </div>
+        <h4 class="text-white font-semibold mb-2">Détection de fuites de données</h4>
+        <p class="text-sm text-slate-500">[Contenu à fournir par le client]</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-slate-900/30 p-6 rounded-lg border border-slate-800 hover:border-accent-500/20 transition-colors group">
+        <div class="p-2.5 bg-accent-900/20 border border-accent-500/20 rounded-lg text-accent-500 w-fit mb-4">
+          <span class="iconify" data-icon="lucide:eye" data-width="22" data-stroke-width="1.5"></span>
+        </div>
+        <h4 class="text-white font-semibold mb-2">Surveillance de l'e-réputation</h4>
+        <p class="text-sm text-slate-500">[Contenu à fournir par le client]</p>
+      </div>
+      <!-- Card 4 -->
+      <div class="bg-slate-900/30 p-6 rounded-lg border border-slate-800 hover:border-accent-500/20 transition-colors group">
+        <div class="p-2.5 bg-accent-900/20 border border-accent-500/20 rounded-lg text-accent-500 w-fit mb-4">
+          <span class="iconify" data-icon="lucide:radar" data-width="22" data-stroke-width="1.5"></span>
+        </div>
+        <h4 class="text-white font-semibold mb-2">Analyse de la surface d'attaque</h4>
+        <p class="text-sm text-slate-500">[Contenu à fournir par le client]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 max-w-7xl mx-auto px-6 relative z-10">
+    <div class="bg-slate-900/50 backdrop-blur-sm rounded-2xl border border-slate-800 p-12 text-center relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-brand-500/5 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-accent-500/5 rounded-full blur-3xl"></div>
+      <div class="relative z-10">
+        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-4 text-white">Discutons de votre projet cybersécurité</h2>
+        <p class="text-slate-400 mb-8 max-w-xl mx-auto">
+          Échangez avec nos experts pour définir l'accompagnement le plus adapté à vos enjeux de sécurité.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="contact.html" class="group inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white rounded-md transition-all shadow-[0_0_20px_-5px_rgba(22,163,74,0.3)] hover:shadow-[0_0_25px_-5px_rgba(177,76,230,0.4)] bg-gradient-to-r from-brand-600 to-brand-700 hover:from-accent-600 hover:to-accent-700 relative overflow-hidden">
+            <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+            <span class="relative flex items-center">
+              Nous contacter
+              <span class="iconify ml-2 group-hover:translate-x-1 transition-transform" data-icon="lucide:arrow-right" data-width="16" data-stroke-width="1.5"></span>
+            </span>
+          </a>
+          <a href="contact.html#rdv" class="inline-flex items-center justify-center px-6 py-3 text-sm font-medium border rounded-md transition-all text-white bg-transparent border-slate-700 hover:bg-slate-800 hover:border-slate-600">
+            Prendre un rendez-vous
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="shared.js"></script>
+</body>
+</html>
